@@ -1,0 +1,220 @@
+:root {
+  --text-color: #434455;
+  --highlight-color: #4d5ae5;
+  --background-color: #2e2f42;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* General Styles */
+
+/* HEADER SECTION */
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  color: #2e2f42;
+  letter-spacing: 0.54px;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.navbar-links {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-start;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #434455;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-link:hover {
+  color: #1128a7;
+}
+
+.contact-info {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-right: 72px;
+}
+.contact-info :hover {
+  color: #1128a7;
+}
+.contact-info-link {
+  text-decoration: none;
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+}
+
+/* END OF HEADER SECTION */
+
+/* MAIN */
+.main-content-area {
+  background-color: var(--background-color);
+  width: 1440;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.content-area {
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1.12px;
+  padding-top: 120px;
+  padding-top: 120px;
+}
+.button {
+  width: 169px;
+  height: 56px;
+  margin-top: 48px;
+  background-color: var(--highlight-color);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  line-height: 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  transition-duration: 0.4s;
+}
+.button:active {
+  background-color: #1128a7;
+}
+/* END OF MAIN */
+
+/* OUR TEAM AND WHAT ARE WE DOING SECTION */
+.text-words {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.word {
+  color: #2e2f42;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  margin-left: 24px;
+}
+.description {
+  line-height: 24px;
+  font-weight: 400;
+  color: #434455;
+  letter-spacing: 0.32px;
+  margin-left: 24px;
+}
+
+.section-title {
+  padding: 30px;
+  text-align: center;
+  color: #2e2f42;
+  letter-spacing: 0.72px;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 36px;
+}
+
+.images {
+  list-style-type: none;
+  display: flex;
+  margin: 24px;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 120px;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+}
+
+.team-member {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.image-container {
+  flex: 0 0 calc(25% - 20px);
+  text-align: center;
+  margin: 10px;
+  padding-top: 10px;
+  margin-bottom: 120px;
+  border: 1px;
+  width: 264px;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* END OF OUR TEAM AND WHAT ARE WE DOING SECTION */
+
+/* FOOTER */
+.style-footer {
+   background-color: var(--background-color);
+  width: 1440;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 40px;
+}
+.logo-link-footer {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  margin-bottom: 17.5px;
+}
+.footer-description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #f4f4fd;
+  letter-spacing: 0.34px;
+}
+/* END OF FOOTER */
+
+/* End of General Styles */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
