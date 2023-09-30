@@ -67,18 +67,28 @@ body {
 
 /* MAIN */
 .main-content-area {
-  background-color: var(--background-color);
+  background-image: url("/images/people-office.jpg");
+  background-size: cover;
   width: 1440;
   height: 600px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+  isolation: isolate;
+}
+.main-content-area::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--background-color);
+  opacity: 0.7;
 }
 
 .content-area {
+  position: relative;
   font-size: 56px;
   line-height: 60px;
   font-weight: 700;
@@ -89,9 +99,11 @@ body {
   padding-top: 120px;
 }
 .button {
+  position: relative;
   width: 169px;
   height: 56px;
   margin-top: 48px;
+  font-family: "Roboto", sans-serif;
   background-color: var(--highlight-color);
   border-radius: 4px;
   color: #ffffff;
@@ -111,12 +123,20 @@ body {
 /* END OF MAIN */
 
 /* OUR TEAM AND WHAT ARE WE DOING SECTION */
+
 .text-words {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin-top: 120px;
   margin-bottom: 120px;
+}
+.svg-icon {
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .word {
   color: #2e2f42;
@@ -181,23 +201,73 @@ body {
   width: 100%;
   height: auto;
 }
+.socialmedia-link {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 24px;
+}
+.instagram {
+  background-color: var(--highlight-color);
+  padding: 12px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.facebook {
+  background-color: var(--highlight-color);
+  padding: 12px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.twitter {
+  background-color: var(--highlight-color);
+  padding: 12px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.linkin {
+  background-color: var(--highlight-color);
+  padding: 12px;
+  border-radius: 50%;
+  align-items: center;
+}
 
 /* END OF OUR TEAM AND WHAT ARE WE DOING SECTION */
-
+/* CUSTOMER SECTION */
+.customer-link {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+}
+.link {
+  height: 88px;
+  width: 168px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 120px;
+}
+/* END OF CUSTOMER SECTION */
 /* FOOTER */
 .style-footer {
-   background-color: var(--background-color);
-  width: 1440;
+  background-color: var(--background-color);
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
   padding: 40px;
+}
+
+.style-footer div {
+  display: flex;
 }
 .logo-link-footer {
   font-family: "Raleway", sans-serif;
-  text-decoration: none;
   margin-bottom: 17.5px;
+  text-decoration: none;
+  list-style-type: none;
 }
 .footer-description {
   font-size: 16px;
@@ -206,6 +276,22 @@ body {
   color: #f4f4fd;
   letter-spacing: 0.34px;
 }
+.footer-socialmedia {
+  color: #f4f4fd;
+  margin-left: 100px;
+  text-transform: lowercase;
+}
+
+.socialmedia-linkfooter {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 24px;
+  margin-left: 75px;
+  gap: 24px;
+  background-color: #2e2f42;
+}
+
 /* END OF FOOTER */
 
 /* End of General Styles */
