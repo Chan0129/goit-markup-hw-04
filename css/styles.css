@@ -2,6 +2,7 @@
   --text-color: #434455;
   --highlight-color: #4d5ae5;
   --background-color: #2e2f42;
+  --button-clicked: #2f0fe7;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
 }
 
 .navbar-link:hover {
-  color: #1128a7;
+  color: var(--button-clicked);
 }
 
 .contact-info {
@@ -55,7 +56,7 @@ body {
   padding-right: 72px;
 }
 .contact-info :hover {
-  color: #1128a7;
+  color: var(--button-clicked);
 }
 .contact-info-link {
   text-decoration: none;
@@ -118,7 +119,7 @@ body {
   transition-duration: 0.4s;
 }
 .button:active {
-  background-color: #1128a7;
+  background-color: var(--button-clicked);
 }
 /* END OF MAIN */
 
@@ -207,33 +208,16 @@ body {
   justify-content: space-between;
   padding: 24px;
 }
-.instagram {
-  background-color: var(--highlight-color);
-  padding: 12px;
-  border-radius: 50%;
-  align-items: center;
-}
-
-.facebook {
-  background-color: var(--highlight-color);
-  padding: 12px;
-  border-radius: 50%;
-  align-items: center;
-}
-
-.twitter {
-  background-color: var(--highlight-color);
-  padding: 12px;
-  border-radius: 50%;
-  align-items: center;
-}
-
+.instagram,
+.facebook,
+.twitter,
 .linkin {
   background-color: var(--highlight-color);
   padding: 12px;
   border-radius: 50%;
   align-items: center;
 }
+
 
 /* END OF OUR TEAM AND WHAT ARE WE DOING SECTION */
 /* CUSTOMER SECTION */
@@ -304,3 +288,15 @@ h5,
 h6 {
   margin: 0;
 }
+
+.instagram:hover,
+.facebook:hover,
+.twitter:hover,
+.linkin:hover {
+  background-color: var(--button-clicked);
+   transition-duration: 0.4s;
+
+}
+
+
+
