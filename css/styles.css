@@ -197,8 +197,8 @@ body {
   border: 1px;
   width: 264px;
   height: auto;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
-   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+  border-radius: 5px;
 }
 
 .image-container img {
@@ -221,7 +221,6 @@ body {
   align-items: center;
 }
 
-
 /* END OF OUR TEAM AND WHAT ARE WE DOING SECTION */
 /* CUSTOMER SECTION */
 .customer-link {
@@ -239,25 +238,17 @@ body {
   border-width: 1px;
   border-color: #8e8f99;
   border-radius: 4px;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 
   background-color: transparent;
   position: relative; /* Add this for positioning */
   overflow: hidden; /* Add this to clip child elements */
 }
 
-
-
 .link:hover {
   background-color: var(--highlight-color);
-   transition: fill 0.3s;
- 
- 
+  transition: fill 0.3s;
 }
-
-
-
-
 
 /* END OF CUSTOMER SECTION */
 /* FOOTER */
@@ -286,7 +277,6 @@ body {
 .footer-socialmedia {
   color: #f4f4fd;
   margin-left: 100px;
-  
 }
 
 .socialmedia-linkfooter {
@@ -317,9 +307,5 @@ h6 {
 .twitter:hover,
 .linkin:hover {
   background-color: var(--button-clicked);
-   transition-duration: 0.4s;
-
+  transition-duration: 0.4s;
 }
-
-
-
