@@ -163,6 +163,7 @@ body {
   font-weight: 700;
   line-height: 40px;
   font-size: 36px;
+  margin-bottom: 72px;
 }
 
 .images {
@@ -196,6 +197,8 @@ body {
   border: 1px;
   width: 264px;
   height: auto;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+   border-radius: 5px;
 }
 
 .image-container img {
@@ -225,8 +228,10 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin: 12px;
+  gap: 24px;
+  margin-bottom: 120px;
 }
+
 .link {
   height: 88px;
   width: 168px;
@@ -234,8 +239,26 @@ body {
   border-width: 1px;
   border-color: #8e8f99;
   border-radius: 4px;
-  margin-bottom: 120px;
+  transition: background-color 0.3s; 
+
+  background-color: transparent;
+  position: relative; /* Add this for positioning */
+  overflow: hidden; /* Add this to clip child elements */
 }
+
+
+
+.link:hover {
+  background-color: var(--highlight-color);
+   transition: fill 0.3s;
+ 
+ 
+}
+
+
+
+
+
 /* END OF CUSTOMER SECTION */
 /* FOOTER */
 .style-footer {
